@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Virupaksha</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", "Times", "serif";
+            line-height: 1.7;
+            color: #000;
+            background: #fff;
+            font-size: 18px;
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem 4rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            line-height: 1.3;
+            margin-bottom: 2rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .hero-links {
+            color: #000;
+            text-decoration: underline;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .header-links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .header-links a {
+            color: #000;
+            text-decoration: underline;
+            font-size: 1rem;
+        }
+
+        /* Section Styles */
+        section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            padding-top: 3rem;
+            border-top: 1px solid #000;
+            position: relative;
+        }
+
+        section::before {
+            content: "◆";
+            position: absolute;
+            top: -0.6rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            padding: 0 1rem;
+            color: #000;
+            font-size: 1rem;
+            line-height: 1;
+        }
+
+        section:not(:first-of-type) {
+            margin-top: 0;
+        }
+
+        section:not(:first-of-type)::before {
+            content: "◆";
+            position: absolute;
+            top: -0.6rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            padding: 0 1rem;
+            color: #000;
+            font-size: 1rem;
+            line-height: 1;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Experience Items */
+        .experience-item, .project-item {
+            margin-bottom: 2rem;
+        }
+
+        .item-header {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        .item-company {
+            font-size: 1rem;
+        }
+
+        .item-date {
+            font-size: 0.95rem;
+            color: #666;
+            margin-top: 0.25rem;
+        }
+
+        .item-description {
+            margin-top: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Project Links */
+        .project-links {
+            margin-top: 0.75rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-links a {
+            color: #000;
+            text-decoration: underline;
+            font-size: 0.95rem;
+        }
+
+        /* Author List */
+        .item-authors {
+            font-size: 0.95rem;
+            color: #444;
+            margin-top: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .item-authors a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .item-authors .author-me {
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                padding: 8rem 1.5rem 3rem;
+            }
+
+            .header-links {
+                gap: 1rem;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Pranav Virupaksha</h1>
+        <p>
+            Hi there! I'm a machine learning researcher and engineer interested in computer vision and multimodal AI systems with applications in autonomy and human-computer interaction. Currently, I'm pursuing an M.S. in Computer Science @ <a href="https://www.gatech.edu/" target="_blank" class="hero-links">Georgia Tech</a>, and working on Social AI with Prof. <a href="https://rehg.org/" target="_blank" class="hero-links">James M. Rehg</a>.
+            <br><br>
+            Previously, I received my B.S. in Computer Science and Linguistics from the <a href="https://illinois.edu/" target="_blank" class="hero-links">University of Illinois Urbana-Champaign</a> and have worked at <a href="https://www.anduril.com/" target="_blank" class="hero-links">Anduril Industries</a> and <a href="https://www.saab.com/markets/united-states/skapa-by-saab" target="_blank" class="hero-links">Saab, Inc.</a> on computer vision applications and LLM development, respectively. 
+        </p>
+
+        <div class="header-links">
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="https://www.linkedin.com/in/pv5667/" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=oyeHCvoAAAAJ" target="_blank">Scholar</a>
+            <a href="https://github.com/PV5667" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        
+        <div class="experience-item">
+            <div class="item-header">
+                <div class="item-title">Machine Learning Researcher</div>
+                <div class="item-company">Rehg Lab, University of Illinois Urbana-Champaign</div>
+                <div class="item-date">July 2024 – Present</div>
+            </div>
+            <div class="item-description">
+                Working on vision-language models for social gesture understanding, with papers accepted to NeurIPS 2025 and CVPR 2025.
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <div class="item-title">Software Engineer Intern</div>
+                <div class="item-company">Anduril Industries</div>
+                <div class="item-date">May 2025 – August 2025</div>
+            </div>
+            <div class="item-description">
+                Built and deployed infrared image quality assessment models and optimized real-time image processing pipelines for defense applications.
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <div class="item-title">Machine Learning Engineer Intern</div>
+                <div class="item-company">Saab, Inc.</div>
+                <div class="item-date">June 2024 – August 2024</div>
+            </div>
+            <div class="item-description">
+                Led company-wide LLM development initiative, building multi-agent workflows for document analysis and proposal generation.
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects & Research</h2>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div class="item-title">Toward Human Deictic Gesture Target Estimation</div>
+            </div>
+            <div class="item-authors">
+                <a href="https://www.irohxucao.com/" target="_blank">Xu Cao</a> · <span class="author-me">Pranav Virupaksha</span> · <a href="https://sites.google.com/view/sangmin-lee" target="_blank">Sangmin Lee</a> · <a href="https://bolinlai.github.io/" target="_blank">Bolin Lai</a> · <a href="https://vjwq.github.io/" target="_blank">Wenqi Jia</a> · <a href="https://whatashot.github.io/" target="_blank">Jintai Chen</a> · <a href="https://rehg.org/" target="_blank">James M. Rehg</a>
+            </div>
+            <div class="item-description">
+                NeurIPS 2025
+            </div>
+            <div class="project-links">
+                <a href="https://openreview.net/pdf?id=hio3T2OwHB" target="_blank">Paper</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div class="item-title">SocialGesture: Delving into Multi-Person Gesture Understanding</div>
+            </div>
+            <div class="item-authors">
+                <a href="https://www.irohxucao.com/" target="_blank">Xu Cao</a> · <span class="author-me">Pranav Virupaksha</span> · <a href="https://vjwq.github.io/" target="_blank">Wenqi Jia</a> · <a href="https://bolinlai.github.io/" target="_blank">Bolin Lai</a> · <a href="https://fkryan.github.io/" target="_blank">Fiona Ryan</a> · <a href="https://sites.google.com/view/sangmin-lee" target="_blank">Sangmin Lee</a> · <a href="https://rehg.org/" target="_blank">James M. Rehg</a>
+            </div>
+            <div class="item-description">
+              CVPR 2025
+            </div>
+            <div class="project-links">
+                <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Cao_SocialGesture_Delving_into_Multi-person_Gesture_Understanding_CVPR_2025_paper.pdf" target="_blank">Paper</a>
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="item-header">
+                <div class="item-title">Dynamic and Switchable Quantization of Large Language Models</div>
+            </div>
+            <div class="item-description">
+                Built quantization-aware training framework for GPT-2 with per-layer dynamic bit-width switching and multi-adapter LoRA mechanisms.
+            </div>
+            <div class="project-links">
+                <a href="#" target="_blank">Code</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div class="item-title">CourseMatch UIUC</div>
+            </div>
+            <div class="item-description">
+                Built semantic course search tool for UIUC that reached 800+ unique visitors and 2,500+ searches across 7,500+ scraped courses.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Pranav Virupaksha
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
